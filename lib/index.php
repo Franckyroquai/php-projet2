@@ -16,9 +16,24 @@
     //foreach ($data as $key => $value) {
     //    echo $value;
     //}
-    $contenu = "Bonjour et bienvenu dans ce cours";
-    file_put_contents("texte2.txt",$contenu);
+    //$contenu = "Bonjour et bienvenu dans ce cours";
+    //file_put_contents("texte2.txt",$contenu);
 
+    //ouverture du fichier
+    $data = fopen("texte.txt", "r");
+
+    //manipulation de fichier
+    $char = fgetc($data);
+    //$char1 = fgetc($data);
+    //echo $char1;
+    while ($char == true) {
+        echo $char;
+        $char = fgetc($data);
+    }
+
+
+    //Fermeture du fichier
+    fclose($data);
 
 
     ?>
