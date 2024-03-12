@@ -23,13 +23,25 @@
     $data = fopen("texte.txt", "r");
 
     //manipulation de fichier
-    $char = fgetc($data);
-    //$char1 = fgetc($data);
-    //echo $char1;
-    while ($char == true) {
-        echo $char;
-        $char = fgetc($data);
-    }
+
+    // $char = fgetc($data);
+    // //$char1 = fgetc($data);
+    // //echo $char1;
+    // while ($char == true) {
+    //     echo $char;
+    //     $char = fgetc($data);
+    // }
+
+    // $line =  fgets($data);
+
+    // while (feof($data) == false) {
+    //     echo $line."<br>";
+    //     $line = fgets($data);
+    // }
+
+    $contenu = fread($data, 10000);
+    echo $contenu;
+
 
 
     //Fermeture du fichier
