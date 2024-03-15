@@ -60,5 +60,10 @@
     rmdir("mon_dossier");
 
     ?>
+    <h1>JSON (JavaScript Object Notation) en PHP</h1>
+    <?php
+    
+    
+    ?>
 </body>
 </html>
