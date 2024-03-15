@@ -6,6 +6,7 @@
     <title><?php echo "Les fichiers en php";?></title>
 </head>
 <body>
+    <h1>Les fichiers en PHP</h1>
     <?php
     //$contenu_fichier = file_get_contents("texte.txt");
     //echo $contenu_fichier;
@@ -47,6 +48,16 @@
     //Fermeture du fichier
     fclose($data);
 
+
+    ?>
+    <h1>Les répertoires en PHP</h1>
+    <?php
+    $chemin = getcwd();
+    echo $chemin."<br>";
+    //chdir("lib");
+    //echo getcwd();
+    mkdir("mon_dossier");
+    rmdir("mon_dossier");
 
     ?>
 </body>
